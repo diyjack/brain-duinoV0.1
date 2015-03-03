@@ -1,4 +1,5 @@
 brain-duino V0.1
+brain-duino V0.2
 =======================================
 
 <img src="https://lh6.googleusercontent.com/-F6pyRgoemDs/VKWOohOkALI/AAAAAAAAJvA/oRMcphmM1Lo/w210-h118-no/Screen%2BShot%2B2014-11-11%2Bat%2B5.21.22%2BPM.png" alt="circuit" width="20%"><br>
@@ -9,6 +10,17 @@ brain-duino V0.1
 
 BrainA1-11Nov2014
 is brain-duino V0.1 curcuit and PCB
+
+
+
+
+31 Jan 2015
+
+brain-duino V0.2
+BrainA1-31Jan2015
+is brain-duino V0.2 curcuit and PCB
+=======================================
+
 
 =========================================
 “char6BSLED1_analogIN_4chBrain_intwithClock_UNO_Bluetooth_2.ino” is Arduino code for use Arduino AD input. can use for 2 ch mode and 4 ch mode.
