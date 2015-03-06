@@ -13337,6 +13337,8 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf<
 <part name="SJ16" library="jumper" deviceset="SJ" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="SJ6" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ17" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13463,7 +13465,7 @@ or 0 ohm for no low cut</text>
 <rectangle x1="215.9" y1="180.34" x2="261.62" y2="215.9" layer="98"/>
 <rectangle x1="271.78" y1="200.66" x2="294.64" y2="215.9" layer="99"/>
 <rectangle x1="274.32" y1="144.78" x2="297.18" y2="165.1" layer="99"/>
-<text x="17.78" y="38.1" size="1.778" layer="94">SJ6 : JP1-2 &amp; JP3-4
+<text x="48.26" y="10.16" size="1.778" layer="94">SJ6 : JP1-2 &amp; JP3-4
 ON : default
 SJ6 : JP1-2 &amp; JP3-4
 open connect test device</text>
@@ -13472,7 +13474,7 @@ Ref to Ref V
 SJ7 : 2-3 : 
 Ref to GND
 default 2-3 : GND</text>
-<text x="20.32" y="83.82" size="1.778" layer="94">test
+<text x="20.32" y="91.44" size="1.778" layer="94">test
 electrode
 connection</text>
 <text x="162.56" y="68.58" size="1.778" layer="94">SJ8 : 1 -2 : 
@@ -13968,6 +13970,14 @@ PIN 13 : AIN4  to  PIN 24 : AIN15</text>
 <attribute name="NAME" x="52.07" y="42.545" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="62.23" y="48.26" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="SJ6" gate="1" x="25.4" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.86" y="71.12" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="29.21" y="73.66" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SJ17" gate="1" x="43.18" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.64" y="35.56" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="46.99" y="38.1" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14002,7 +14012,12 @@ PIN 13 : AIN4  to  PIN 24 : AIN15</text>
 <pinref part="LR-IN1" gate="A" pin="6"/>
 <wire x1="58.42" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="58.42" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="58.42" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="SJ17" gate="1" pin="2"/>
+<wire x1="58.42" y1="48.26" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="45.72" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
+<junction x="58.42" y="48.26"/>
 </segment>
 </net>
 <net name="LR-IN" class="0">
@@ -14049,6 +14064,10 @@ PIN 13 : AIN4  to  PIN 24 : AIN15</text>
 <wire x1="58.42" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="88.9" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="SJ6" gate="1" pin="2"/>
+<wire x1="25.4" y1="81.28" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<junction x="33.02" y="88.9"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -15457,13 +15476,22 @@ PIN 13 : AIN4  to  PIN 24 : AIN15</text>
 <wire x1="33.02" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="63.5" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SJ6" gate="1" pin="1"/>
+<wire x1="25.4" y1="71.12" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
+<junction x="33.02" y="63.5"/>
 </segment>
 </net>
 <net name="N$81" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="38.1" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="38.1" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SJ17" gate="1" pin="1"/>
+<wire x1="58.42" y1="33.02" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="35.56" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<junction x="58.42" y="33.02"/>
 </segment>
 </net>
 </nets>
