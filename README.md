@@ -2,9 +2,7 @@ brain-duino V0.1
 brain-duino V0.2
 =======================================
 
-<img src="https://lh6.googleusercontent.com/-F6pyRgoemDs/VKWOohOkALI/AAAAAAAAJvA/oRMcphmM1Lo/w210-h118-no/Screen%2BShot%2B2014-11-11%2Bat%2B5.21.22%2BPM.png" alt="circuit" width="20%"><br>
-<img src="https://lh3.googleusercontent.com/-_fsienoexwU/VKWOoYGFkaI/AAAAAAAAJu8/UW7I7lz-Svw/w452-h287-no/Screen%2BShot%2B2014-11-11%2Bat%2B5.32.37%2BPM.png" alt="circuit" width="49%"><br>
-<img src="https://lh6.googleusercontent.com/-vmlLOeOVrtk/VKWOoCAeaPI/AAAAAAAAJvQ/f-P2DQ0kc10/w994-h939-no/photo%2B5.JPG" alt="test" width="49%">
+
 
 7 Dec 2014
 
@@ -14,10 +12,10 @@ is brain-duino V0.1 curcuit and PCB
 
 
 
-31 Jan 2015
+5 March 2015
 
 brain-duino V0.2
-BrainA1-31Jan2015
+BrainA1-5March2015
 is brain-duino V0.2 curcuit and PCB
 =======================================
 
