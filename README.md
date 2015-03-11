@@ -12,10 +12,10 @@ is brain-duino V0.1 curcuit and PCB
 
 
 
-5 March 2015
+11 March 2015
 
 brain-duino V0.2
-BrainA1-5March2015
+BrainA1-11March2015
 is brain-duino V0.2 curcuit and PCB
 =======================================
 
